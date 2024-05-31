@@ -1,0 +1,16 @@
+<h2 align="center">View User</h2>
+<table border="1" align="center">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Phone</td>
+    </tr>
+    <% all.map((val)=>{ %>
+        <tr>
+            <td><%= val.id %></td>
+            <td><%= val.name %></td>
+            <td><%= val.phone %></td>
+        </tr>
+    <% }) %>
+</table>
+<a href="/crud/adduser">Add</a>
